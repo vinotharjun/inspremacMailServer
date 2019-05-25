@@ -46,9 +46,9 @@ var newname=req.files.avatar.path + '.pdf'
       console.log(string)
       var mailOptions = {
         from: 'vinod.aadvik@gmail.com',
-        to:"vinod.looser00@gmail.com",
+        to:"careers@inspremacengineers.com",
         //to: 'linguisticsresearch@phoenicorn.com',
-        subject: 'phosphene mails',
+        subject: 'uploaded resume',
         text: string,
       
         attachments:[{filename:newname}]
@@ -56,6 +56,7 @@ var newname=req.files.avatar.path + '.pdf'
       transporter.sendMail(mailOptions, function(error, info){
         if (error) {
           console.log(error);
+            res.send("somthing went wrong")
         } else {
           console.log('Email sent: ' + info.response);
           res.send("Thank you for your response ")
