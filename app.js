@@ -34,8 +34,8 @@ var newname=req.files.avatar.path + '.pdf'
     var transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-          user: 'vinod.aadvik@gmail.com',
-          pass: 'vinoth108'
+          user: 'vinod.looser00@gmail.com',
+          pass: 'vinoth1080'
         }
       });
       //machine leanring is an art
